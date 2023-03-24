@@ -18,7 +18,7 @@ export const githubApi = createApi({
   tagTypes: ["Users"],
   keepUnusedDataFor: 10,
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://api.github.com/",
+    baseUrl: "https://api.github.com/",
   }),
   endpoints: (build) => ({
     getUsers: build.query<ResultApi, string>({
